@@ -23,6 +23,9 @@ describe('Scenario 2', () => {
         ]
     
         expect(TicTacToe.checkWin(symbol,scenarioXWin)).toStrictEqual(true);
+        expect(typeof TicTacToe.checkWin(symbol,scenarioXWin)).toBe('boolean');
+        expect(TicTacToe.checkWin("O",scenarioXWin)).toBe(false);
+
     })
 })
 
