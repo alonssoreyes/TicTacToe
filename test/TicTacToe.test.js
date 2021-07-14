@@ -1,5 +1,10 @@
-const { expect } = require("@jest/globals")
+const { expect } = require("@jest/globals");
+const TicTacToe = require("../src/TicTacToe");
 
-test('Canary test', () => {
-    expect(true).toBe(true);
+test('Printed Board', () => {
+    expect(TicTacToe.printBoard()).toBe(`  | |
+        --|-|--
+          | |
+        --|-|--
+          | |`);
 })
