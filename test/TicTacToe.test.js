@@ -15,13 +15,14 @@ describe('Scenario 1 |Print board Test', () => {
 })
 describe('Scenario 2', () => {
     test('User X Wins in a vertial line', () => {
+        const symbol = "X";
         let scenarioXWin = [
-            ["X", "", ""],
-            ["X", "", ""],
-            ["X", "", ""],
+            [symbol, "", ""],
+            [symbol, "", ""],
+            [symbol, "", ""],
         ]
     
-        expect(TicTacToe.checkWin(scenarioXWin)).toStrictEqual(true);
+        expect(TicTacToe.checkWin(symbol,scenarioXWin)).toStrictEqual(true);
     })
 })
 
