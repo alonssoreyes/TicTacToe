@@ -2,5 +2,12 @@ const { expect } = require("@jest/globals");
 const TicTacToe = require("../src/TicTacToe");
 
 test('Printed Board', () => {
-    expect(TicTacToe.printBoard()).toBe("  | |  \n--|-|--\n  | |  \n--|-|--\n  | |  \n");
+    const STRINGBOARD = "  | |  \n--|-|--\n  | |  \n--|-|--\n  | |  \n";
+    let board = [
+        ["", "", ""],
+        ["", "", ""],
+        ["", "", ""],
+    ]
+
+    expect(TicTacToe.printBoard(board)).toBe(STRINGBOARD);
 })
