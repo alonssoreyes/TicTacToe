@@ -54,6 +54,9 @@ const TicTacToe = {
           printedBoard += "|";
           printedBoard += board[2][2] == "" ? "  \n" : `${board[2][2]}\n`;
           return printedBoard;
+    },
+    checkWin: function (){
+        return ['']
     }
 }
 
