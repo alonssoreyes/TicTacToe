@@ -55,8 +55,11 @@ const TicTacToe = {
           printedBoard += board[2][2] == "" ? "  \n" : `${board[2][2]}\n`;
           return printedBoard;
     },
-    checkWin: function (){
-        return ['']
+    checkWin: function (board){
+        return [board[0][0] === "X" &&
+        board[1][0] === "X" &&
+        board[2][0] === "X"].includes(true)
+
     }
 }
 

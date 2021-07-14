@@ -21,7 +21,7 @@ describe('Scenario 2', () => {
             ["X", "", ""],
         ]
     
-        expect(TicTacToe.checkWin()).toStrictEqual(scenarioXWin);
+        expect(TicTacToe.checkWin(scenarioXWin)).toStrictEqual(true);
     })
 })
 
