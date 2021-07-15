@@ -87,8 +87,11 @@ const TicTacToe = {
         ].includes(true)
 
     },
-    isDraw: function() { 
-        return true;
+    isDraw: function(board) { 
+        return (
+            !this.checkWin("X", board) &&
+            !this.checkWin("O", board)
+          );
     }
 }
 

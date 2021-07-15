@@ -109,13 +109,13 @@ describe('Scenario 4', () => {
 describe('Scenario 5 ', () => {
     test('Game ends with a draw', () => {
         const symbol = "X";
-        let scenarioXWinFirstDiagonal = [
+        let drawBoard = [
             ["X", "O", "O"],
             ["O", "O", "X"],
             ["X", "X", "O"],
         ]
 
-        expect(TicTacToe.isDraw()).toBe(true)
+        expect(TicTacToe.isDraw(drawBoard)).toBe(true)
 
     })
     
