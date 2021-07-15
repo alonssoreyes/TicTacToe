@@ -77,6 +77,10 @@ describe('Scenario 3', () => {
         ]
 
         expect(TicTacToe.checkWin(symbol,scenarioOWinFirstRow)).toBe(true)
+        expect(TicTacToe.checkWin(symbol,scenarioOWinSecondRow)).toBe(true)
+
+        expect(TicTacToe.checkWin(symbol,scenarioOWinThirdRow)).toBe(true)
+
     })
     
 })
