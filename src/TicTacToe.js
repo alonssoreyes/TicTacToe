@@ -6,8 +6,8 @@ const TicTacToe = {
             symbol:"X"
         };
         this.PLAYER2 = {
-            name:"Cross",
-            symbol:"X"
+            name:"Naughts",
+            symbol:"O"
         };
         this.startAgain();
     },
@@ -78,6 +78,9 @@ const TicTacToe = {
             board[2][1] === symbol &&
             board[2][2] === symbol,
         ].includes(true)
+
+    },
+    draw: function() { 
 
     }
 }
