@@ -87,8 +87,8 @@ const TicTacToe = {
         ].includes(true)
 
     },
-    draw: function() { 
-
+    isDraw: function() { 
+        return true;
     }
 }
 
