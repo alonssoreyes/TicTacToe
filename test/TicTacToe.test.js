@@ -86,7 +86,7 @@ describe('Scenario 3', () => {
 })
 describe('Scenario 4', () => {
     test('User "X"  Wins in a diagonal line', () => {
-        const symbol = "O";
+        const symbol = "X";
         let scenarioXWinFirstDiagonal = [
             [symbol, "", ""],
             ["", symbol, ""],
@@ -99,6 +99,8 @@ describe('Scenario 4', () => {
         ]
 
         expect(TicTacToe.checkWin(symbol,scenarioXWinFirstDiagonal)).toBe(true)
+        expect(symbol).toBe("X")
+
         expect(TicTacToe.checkWin(symbol,scenarioXWinSecondDiagonal)).toBe(true)
 
     })
